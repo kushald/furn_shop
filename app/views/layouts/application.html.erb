@@ -166,7 +166,9 @@
     }
 
     .product-text {
-      margin-top: 3%;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      font-weight: 500;
     }
 
     .btn-dark {
@@ -178,6 +180,12 @@
 
     #footer {
       background: #f2f2f2 !important;
+    }
+
+    .key {
+      color: gray;
+      line-height: 2;
+      font-weight: 500;
     }
 
     @media (max-width: 600px) {
@@ -264,7 +272,57 @@
       </div>
     </nav>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div id="footer">
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <ul class="list-unstyled">
+        <li><h5>About</h5></li>
+        <li>Help</li>
+        <li>Career</li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <ul class="list-unstyled">
+        <li><h5>Partners</h5></li>
+        <li>Blog</li>
+        <li>Testimonial</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <ul class="list-unstyled">
+        <li><h5>Support</h5></li>
+        <li>Blog</li>
+        <li>Testimonial</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <ul class="list-unstyled">
+        <li><h5>Address</h5></li>
+        <li>Blog</li>
+        <li>Testimonial</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="col-md-12 text-center">
+      <hr>
+      <small>©Copyright 2016 all right reserved</small>
+    </div>
+    <div class="col-md-12">
+      <i class="fa fa-facebook fa-lg"></i>
+      <i class="fa fa-instagram fa-lg"></i>
+      <i class="fa fa-twitter fa-lg"></i>
+      <i class="fa fa-tumblr fa-lg"></i>
+    </div>
+  </div>
+  </div>
+</div> 
 
     <!-- Swiper JS -->
 
