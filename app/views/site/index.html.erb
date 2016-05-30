@@ -1,10 +1,10 @@
 <!-- Swiper -->
 <div class="swiper-container">
   <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1455994972514-4624f7f224a7?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></div>
-      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1432249339392-2f754cb22105?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></div>
-      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1422480041422-130238c67fe2?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></div>
-      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1422479278902-8cef24992df0?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></div>
+      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1455994972514-4624f7f224a7?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
+      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1432249339392-2f754cb22105?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
+      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1422480041422-130238c67fe2?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
+      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1422479278902-8cef24992df0?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
 </div>
 </div>
 <!-- Add Pagination -->
@@ -49,76 +49,26 @@
   </div>
   <div class="row">
     <h3 class="text-center">TRENDING PRODUCTS</h3>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1432249339392-2f754cb22105?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Orange cozy chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs. 6579</p>
+    <div class="col-md-12">
+    <p id="notice"><%= notice %></p>
+    <% @products.each do |product| %>
+      <div class="col-md-4">
+        <a href="/products/<%= product.id %>"><img class="width-100" src="<%= product.image %>"></a>
+        <div class="row product-text bold">
+          <p class="col-xs-9">
+            <%= product.name %>
+            <br>
+            By Sibatski skoller
+          </p>
+          <p class="col-xs-3">Rs. <%= product.price %></p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1441338167148-d09eab9deed6?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Four cozy chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs.12330</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1429054225288-263bb75c7def?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Wooden Chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs. 6579</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1453128136016-b0c5c09ca9e8?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Four cozy chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs.12330</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Four cozy chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs.12330</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img class="width-100" src="https://images.unsplash.com/photo-1464075208758-5623fb69e13b?crop=entropy&fit=crop&fm=jpg&h=275&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=400">
-      <div class="row product-text bold">
-        <p class="col-xs-9">
-          Four cozy chair
-          <br>
-          By Sibatski skoller
-        </p>
-        <p class="col-xs-3">Rs.12330</p>
-      </div>
-    </div>
+    <% end %>
+  </div>
   </div>
   <div class="row">
     <div class="text-center">
-      <a class="btn-dark" href="#">MORE</a>
+      <a class="btn-dark" href="/products">MORE</a>
     </div>
   </div>    
 </div>
