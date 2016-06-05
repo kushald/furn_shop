@@ -6,12 +6,10 @@
       <div class="col-md-4">
         <a href="/products/<%= product.id %>"><img class="width-100" src="<%= product.image %>"></a>
         <div class="row product-text bold">
-          <p class="col-xs-9">
-            <%= product.name %>
-            <br>
-            By Sibatski skoller
+          <p class="col-xs-8">
+            <a href="#" class="text-upper bold"><%= product.name %></a>
           </p>
-          <p class="col-xs-3">Rs. <%= product.price %></p>
+          <p class="col-xs-4">Rs. <%= product.price %></p>
         </div>
       </div>
     <% end %>

@@ -1,14 +1,27 @@
-<!-- Swiper -->
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1455994972514-4624f7f224a7?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
-      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1432249339392-2f754cb22105?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
-      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1422480041422-130238c67fe2?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
-      <div class="swiper-slide"><a href="/products"><img src="https://images.unsplash.com/photo-1422479278902-8cef24992df0?crop=entropy&fit=crop&fm=jpg&h=1152&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2048"></a></div>
+<div id="wrapper">
+  <div class="slider-wrapper">
+    <div id="slider" class="nivoSlider">
+        <img src="https://images.unsplash.com/photo-1424847262089-18a6858bd7e2?crop=entropy&fit=crop&fm=jpg&h=550&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1280" data-thumb="images/toystory.jpg" alt="" title="#htmlcaption1" />
+        <img src="https://images.unsplash.com/photo-1455994972514-4624f7f224a7?crop=entropy&fit=crop&fm=jpg&h=550&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1280" data-thumb="images/up.jpg" alt="" title="#htmlcaption2" />
+        <img src="https://images.unsplash.com/photo-1462212210333-335063b676bc?crop=entropy&fit=crop&fm=jpg&h=550&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1280" data-thumb="images/toystory.jpg" alt=""  title="#htmlcaption3"/>
+    </div>
+    <div id="htmlcaption1" class="nivo-html-caption">
+      <h3>Modern Keepsakes</h3>
+      <h4>Handcrafted, heirloom quality goods.</h4>
+      <a href="#" class="btn btn-default">SHOP NOW</a>
+    </div>
+    <div id="htmlcaption2" class="nivo-html-caption">
+      <h3>Upto 70% sale</h3>
+      <h4>Welcome this reimagined utilitarian piece to the collection.</h4>
+      <a href="#" class="btn btn-default">SHOP NOW</a>
+    </div>
+    <div id="htmlcaption3" class="nivo-html-caption">
+      <h3>Clearance Sale</h3>
+      <h4>Timeless style to last a lifetime.</h4>
+      <a href="#" class="btn btn-default">SHOP NOW</a>
+    </div>
+  </div>
 </div>
-</div>
-<!-- Add Pagination -->
-<div class="swiper-pagination"></div>
 
 <div class="container">
   <div class="row">
@@ -47,20 +60,18 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <h3 class="text-center">TRENDING PRODUCTS</h3>
+  <div class="trending row">
+    <h4 class="heading"><span>TRENDING PRODUCTS</span></h4>
     <div class="col-md-12">
     <p id="notice"><%= notice %></p>
     <% @products.each do |product| %>
       <div class="col-md-4">
         <a href="/products/<%= product.id %>"><img class="width-100" src="<%= product.image %>"></a>
         <div class="row product-text bold">
-          <p class="col-xs-9">
-            <%= product.name %>
-            <br>
-            By Sibatski skoller
+          <p class="col-xs-8">
+            <a href="#" class="text-upper bold"><%= product.name %></a>
           </p>
-          <p class="col-xs-3">Rs. <%= product.price %></p>
+          <p class="col-xs-4">Rs. <%= product.price %></p>
         </div>
       </div>
     <% end %>

@@ -1,11 +1,11 @@
-<div class="row">
-  <div class="col-md-12"><h5 class="text-center"><%= @product.name.upcase %></h5></div>
-  <div class="col-md-8">
+<div class="container">
+  <div class="row product">
+  <div class="col-md-6">
     <img class="width-100" src="<%= @product.image %>">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <ul class="list-unstyled">
-      <li><span class="key">Name:</span><%= @product.name %></li>
+      <li><span class="product-detail"><%= @product.name %></span></li>
       <li><span class="key">Dimensions:</span> 31.5 cm x 22.5 cm</li>
       <li><span class="key">Materials:</span> Handblown glass, Metal ring, Power cable (2 meters)</li>
       <li><span class="key">Colours:</span> Elfenbein</li>
@@ -18,14 +18,17 @@
   </div>
 </div>
 <div class="row">
-  <hr>
-  <h4>Designed by Sylvain Willenz</h4>
-  <p>
-A winner of multiple awards, including Belgian Designer Of The Year 2009, Sylvain Willenz founded his own design studio in 2004. Drawing on a love of cartoons, his charming range of designs includes the unique Scribble family, a set of patterns created exclusively for Hem, that walks the line between studied imperfection and elegance.</p>
-<hr>
+  <div class="col-md-12">
+    <hr>
+    <h4>Designed by Sylvain Willenz</h4>
+    <p>
+      A winner of multiple awards, including Belgian Designer Of The Year 2009, Sylvain Willenz founded his own design studio in 2004. Drawing on a love of cartoons, his charming range of designs includes the unique Scribble family, a set of patterns created exclusively for Hem, that walks the line between studied imperfection and elegance.
+    </p>
+   <hr>
+  </div>
 </div>
 <div class="row">
-    <h3 class="text-center">SIMILAR PRODUCTS</h3>
+    <h4 class="heading"><span>SIMILAR PRODUCTS</span></h4>
     <div class="trend col-xs-12 col-md-4">
       <div class="col-xs-6 col-md-6">
         <img src="https://images.unsplash.com/photo-1417976528056-3c9bbbb5456c?crop=entropy&fit=crop&fm=jpg&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=152&h=101">
@@ -50,4 +53,5 @@ A winner of multiple awards, including Belgian Designer Of The Year 2009, Sylvai
         <p>Palo Sofa in multiple sizes<br><a href="#" class="underline">Browse</a></p>
       </div>
     </div>
-  </div>
+</div>
+</div>
