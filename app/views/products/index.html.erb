@@ -1,17 +1,19 @@
-<div class="row">
-  <div class="col-md-12"><h4 class="text-center">FURNITURES</h4></div>
-  <div class="col-md-12">
-    <p id="notice"><%= notice %></p>
-    <% @products.each do |product| %>
-      <div class="col-md-4">
-        <a href="/products/<%= product.id %>"><img class="width-100" src="<%= product.image %>"></a>
-        <div class="row product-text bold">
-          <p class="col-xs-8">
-            <a href="#" class="text-upper bold"><%= product.name %></a>
-          </p>
-          <p class="col-xs-4">Rs. <%= product.price %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"><h4 class="text-center">FURNITURES</h4></div>
+    <div class="col-md-12">
+      <p id="notice"><%= notice %></p>
+      <% @products.each do |product| %>
+        <div class="col-md-4">
+          <a href="/products/<%= product.id %>"><img class="width-100" src="<%= product.image %>"></a>
+          <div class="row product-text bold">
+            <p class="col-xs-8">
+              <a href="#" class="text-upper bold"><%= product.name %></a>
+            </p>
+            <p class="col-xs-4">Rs. <%= product.price %></p>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
