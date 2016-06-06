@@ -141,6 +141,10 @@ Primary style
   }
 }
 
+.overflow-hidden {
+    overflow: hidden;
+  }
+
 a {
   color: #111;
   text-decoration: none;
@@ -480,6 +484,7 @@ Main components
 }
 
 .cd-primary-nav, .cd-primary-nav ul {
+  font-family: 'Montserrat';
   position: fixed;
   top: 0;
   right: 0;
@@ -1086,7 +1091,7 @@ Main components
 .cd-overlay {
   /* shadow layer visible when navigation is active */
   position: fixed;
-  z-index: 2;
+  z-index: 9998;
   height: 100%;
   width: 100%;
   top: 0;
