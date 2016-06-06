@@ -1028,7 +1028,7 @@ Main components
   width: 100%;
   top: 50px;
   left: 0;
-  z-index: 3;
+  z-index: 9998;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
