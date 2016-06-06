@@ -485,13 +485,15 @@ Main components
 
 .cd-primary-nav, .cd-primary-nav ul {
   font-family: 'Montserrat';
+  list-style: outside none none;
   position: fixed;
   top: 0;
   right: 0;
   height: 100%;
   width: 260px;
   background: #2e3233;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
   /* Force Hardware Acceleration in WebKit */
